@@ -86,10 +86,10 @@ function rest(target)
     return target;
 }
 
-function pickUpItem(hero,weapon)
+function pickUpItem(heroX,weapon)
 {
     
-    hero.inventory.push(weapon)
+    heroX.inventory.push(weapon)
     document.getElementById('states').value+=('pick up '+ weapon.type + 'with damage '+ weapon.damage +'\\\n');
     console.log(hero.weapon.damage)
 }
