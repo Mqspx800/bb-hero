@@ -4,6 +4,11 @@ img{
     margin: 1rem 1rem 1rem 1rem;
     border: 1px;
     border-style: solid;
+    display:inline-block;
+}
+
+#heroIMG{
+    display: none;
 }
 
 form{
@@ -11,3 +16,14 @@ form{
 }
 
 canvas { background: #eee; display: block; margin: 5px auto; }
+
+textarea{
+    display: block;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    width: 95%;
+    height: 200px;
+    text-align: left;
+    margin:auto
+}
