@@ -5,13 +5,25 @@
     <link href="lib/mocha.css" rel="stylesheet" />
     <link href="lib/hero.css" rel="stylesheet" />
 </head>
-<body>
-
-
+<body onload="draw()">
   <!-- 👍 YOUR HTML HERE 👍 -->
+  <!-- form for hero name -->
+  <div>
+    <form id="myForm" onsubmit="changeHeroName(); return false">
+      <h1>How would you like to name your hero</h1>
+      <label for="Hero_Name"><b>Hero name</b></label>
+      <input type="text" id="hero_name" required/>
+      <button type="submit" class="btn">StartGame</button>
+    </form>
+  </div>
+
+<!--canvas of game-->
+<canvas id="myCanvas" onload="" height='320'></canvas>
 <img src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8f9008f-6797-4e25-b678-bdcd8bc7b515/d8vlic2-9e643d16-963b-4d98-93ea-ff3cfd25143e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q4ZjkwMDhmLTY3OTctNGUyNS1iNjc4LWJkY2Q4YmM3YjUxNVwvZDh2bGljMi05ZTY0M2QxNi05NjNiLTRkOTgtOTNlYS1mZjNjZmQyNTE0M2UucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.N_Jrra55P68ACZfL5-Ok3whL4sBx4g3p-NSPse61XOI' alt="inn" id = 'inn' />
-<img src='' alt='dagger' id = 'dagger'/>
-<img src='' alt = 'bag' id = 'bag'/>
+<img src='http://pixelartmaker.com/art/00b06af9d71df56.png' alt='dagger' id = 'dagger'/>
+<img src='http://pixelartmaker.com/art/6585cedd19b9913.png' alt = 'bag' id = 'bag'/>
+
+
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>

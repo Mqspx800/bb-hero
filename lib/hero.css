@@ -1,7 +1,13 @@
 img{
-    width: 30%;
+    width: 20%;
     height: 20%;
     margin: 1rem 1rem 1rem 1rem;
     border: 1px;
     border-style: solid;
 }
+
+form{
+    text-align: center
+}
+
+canvas { background: #eee; display: block; margin: 5px auto; }
