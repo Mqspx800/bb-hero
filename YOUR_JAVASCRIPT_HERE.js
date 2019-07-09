@@ -309,4 +309,4 @@ function generateRandomIndex()
     return i;
 }
 
-setInterval(draw, 10);
+setInterval(draw, 100);
